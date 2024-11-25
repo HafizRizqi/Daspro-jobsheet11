@@ -2,13 +2,7 @@ import java.util.Scanner;
 
 public class MarianaCafe11 {
 
-    static int[][] penjualan = {
-        {20, 20, 25, 20, 30, 20, 25}, // Kopi
-        {30, 30, 40, 40, 15, 30, 25}, // Teh
-        {20, 30, 35, 30, 20, 30, 25}, // Es Degan
-        {50, 40, 50, 45, 50, 48, 18}, // Roti Bakar
-        {15, 10, 15, 10, 30, 10, 55}  // Gorengan
-    };
+    static int[][] penjualan = new int[5][7];
 
     static String[] menu = {"Kopi", "Teh", "Es Degan", "Roti Bakar", "Gorengan"};
     
@@ -67,6 +61,7 @@ public class MarianaCafe11 {
     }
 
     public static void main(String[] args) {
+        inputPenjualan();
         tampilkanPenjualan();
         menuPenjualanTertinggi();
         rataRataPenjualan();
